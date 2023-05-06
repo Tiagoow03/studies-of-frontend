@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Results Summary Component | FrontEnd Mentor</title>
+</head>
+<body>
+    <div class="container">
+        <!--card-->
+        <div class="card">
+            <!--result-->
+            <section class="result">
+                <h2 class="result__title">Your Result</h2>
+                <div class="score">
+                    <h1 class="score__number">76<span class="score__over100"> of 100</span></h1>
+                </div>
+                <h3 class="result__subtitle">Great</h3>
+                <p class="result__text">You scored higher than 65% of the people who have taken these tests.</p>
+            </section>
+            <!--end of result-->
+            <!--summary-->
+            <section class="summary">
+                <h2 class="summary__title">Summary</h2>
+                <div class="summary__card summary__card--red">
+                    <div class="topic">
+                        <img class="summary__icon" src="assets/images/icon-reaction.svg" alt="reaction image">
+                        <h3 class="summary__heading--red">Reaction</h3>
+                    </div>
+                    <p class="summary__score">80 <span class="summary__over100">/ 100</span></p>
+                </div>
+                <div class="summary__card summary__card--yellow">
+                    <div class="topic">
+                        <img class="summary__icon" src="assets/images/icon-memory.svg" alt="memory image">
+                        <h3 class="summary__heading--yellow">Memory</h3>
+                    </div>
+                    <p class="summary__score">92 <span class="summary__over100">/ 100</span></p>
+                </div>
+                <div class="summary__card summary__card--green">
+                    <div class="topic">
+                        <img class="summary__icon" src="assets/images/icon-verbal.svg" alt="verbal image">
+                        <h3 class="summary__heading--green">Verbal</h3>
+                    </div>
+                    <p class="summary__score">61 <span class="summary__over100">/ 100</span></p>
+                </div>
+                <div class="summary__card summary__card--blue">
+                    <div class="topic">
+                        <img class="summary__icon" src="assets/images/icon-visual.svg" alt="visual image">
+                        <h3 class="summary__heading--blue">Visual</h3>
+                    </div>
+                    <p class="summary__score">72 <span class="summary_over100">/ 100</span></p>
+                </div>
+                <a class="summary__button" href="#">Continue</a>
+            </section>
+            <!--end of summary-->
+        </div>
+        <!--end of card-->
+    </div>
+</body>
+</html>
