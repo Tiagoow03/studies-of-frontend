@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    /* font */
+    --Font: 'Outfit', sans-serif;
+
+    /* widths */
+    --Mobile: 375px;
+    --Desktop: 1440px;
+
+    /* primary colors */
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* neutral colors */
+    --VeryDarkBlue /* (main BG) */ : hsl(217, 54%, 11%);
+    --VeryDarkBlue2 /* (card BG) */ : hsl(216, 50%, 16%);
+    --VeryDarkBlue3 /* (line) */ : hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--Font);
+    color: var(--SoftBlue);
+}
+
+.card{
+    max-width: 290px;
+    height: auto;
+    background-color: var(--VeryDarkBlue2);
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 0.6rem;
+}
+
+.image__nft{
+    max-width: 290px;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    color: var(--White);
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.description{
+    font-size: 0.9rem;
+    letter-spacing: 0.015rem;
+    margin-bottom: 1rem;
+}
+
+.price__and__time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.price__image__ethereum{
+    height: 15px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.price__value{
+    color: var(--Cyan);
+    font-size: 0.90rem;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time__image__clock{
+    height: 15px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.time__text__clock{
+    font-size: 0.90rem;
+}
+
+.line{
+    border: none;
+    border-top: 1px solid var(--VeryDarkBlue3);
+    margin: 1rem 0;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user__image{
+    max-width: 25px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.user__text{
+    font-size: 0.85rem;
+    margin-right: 0.2rem;
+}
+
+.user__text__bold{
+    color: var(--White);
+    font-size: 0.85rem;
+}
