@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  /* font */
+  --Font: "Red Hat Display", sans-serif;
+
+  /* widths */
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  /* primary colors */
+  --PaleBlue: hsl(225, 100%, 94%);
+  --PaleBlue2: hsla(223, 84%, 95%, 0.26);
+  --BrightBlue: hsl(245, 75%, 52%);
+
+  /* neutral colors */
+  --VeryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DesaturatedBlue2: hsl(224, 19%, 43%);
+  --DesaturatedBlue3: hsla(224, 19%, 43%, 0.171);
+  --DarkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--PaleBlue);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--Font);
+}
+
+.card {
+  max-width: 390px;
+  background-color: var(--VeryPaleBlue);
+  color: var(--DesaturatedBlue);
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0rem 1.2rem 2rem var(--DesaturatedBlue3);
+}
+
+.image__hero {
+  max-width: 390px;
+  border-radius: 0.8rem 0.8rem 0rem 0rem;
+}
+
+.text {
+  padding: 2rem 2.4rem 2rem 2.4rem;
+}
+
+.title {
+  color: var(--DarkBlue);
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin: 0.35rem 0rem 0.8rem 0rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0rem 1.3rem 1rem 1.3rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin: 0rem 1.2rem 2.0rem 1.2rem;
+  background-color: var(--PaleBlue2);
+  border-radius: 1rem;
+}
+
+.plan__icon__and__informations {
+  display: flex;
+  flex-direction: row;
+}
+
+.plan__icon {
+  width: 2.4rem;
+}
+
+.plan__informations {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan__title {
+  color: var(--DarkBlue);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.plan__price {
+  font-size: 0.9rem;
+}
+
+.plan__change {
+  color: var(--BrightBlue);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.plan__change:hover {
+  color: var(--DarkBlue);
+}
+
+.button__payment {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0rem 0rem 1.8rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.53rem;
+  text-decoration: none;
+  color: var(--VeryPaleBlue);
+  background-color: var(--BrightBlue);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  box-shadow: 0rem 1.2rem 1rem var(--DesaturatedBlue3);
+}
+
+.button__payment:hover {
+  background-color: var(--DarkBlue);
+}
+
+.button__cancel {
+  color: var(--DesaturatedBlue);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.button__cancel:hover {
+  color: var(--DesaturatedBlue2);
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 340px;
+  }
+
+  .description{
+    margin: 0rem 0.5rem 1rem 0.5rem;
+  }
+} 
