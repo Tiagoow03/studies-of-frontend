@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* font */
+  --Font: "Big Shoulders Display", cursive;
+  --Font2: "Lexend Deca", sans-serif;
+
+  /* widths */
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  /* primary colors */
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+
+  /* neutral colors */
+  --TransparentWhite/*(paragraphs)*/: hsla(0, 0%, 100%, 0.75);
+  --VeryLightGray/*(background, headings, buttons)*/: hsl(0, 0%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  font-family: var(--Font2);
+  color: var(--VeryLightGray);
+}
+
+.container {
+  height: 100vh;
+  background-color: var(--VeryLightGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.card__section {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 3rem 3.5em 3rem 2.5rem;
+}
+
+.card__section1 {
+  background-color: var(--BrightOrange);
+  border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.card__section2 {
+  background-color: var(--DarkCyan);
+}
+
+.card__section3 {
+  background-color: var(--VeryDarkCyan);
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.icon__car {
+  max-width: 4.7rem;
+  margin-bottom: 1.6rem;
+}
+
+.title {
+  font-family: var(--Font);
+  font-size: 2.65rem;
+  margin-bottom: 1.6rem;
+}
+
+.text {
+  color: var(--TransparentWhite);
+  line-height: 1.6rem;
+  margin-bottom: 5.5rem;
+}
+
+.button {
+  height: max-content;
+  width: max-content;
+  text-decoration: none;
+  background-color: var(--VeryLightGray);
+  padding: 1rem 1.8rem;
+  border-radius: 3rem;
+}
+
+.button:hover {
+  background-color: hsl(0, 0%, 87%);
+}
+
+.button1 {
+  color: var(--BrightOrange);
+}
+
+.button2 {
+  color: var(--DarkCyan);
+}
+
+.button3 {
+  color: var(--VeryDarkCyan);
+}
+
+@media screen and (max-width: 905px) {
+  .container {
+    height: auto;
+    align-items: normal;
+  }
+
+  .card {
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .card__section {
+    max-width: 320px;
+    padding: 3rem 2.5em 3rem 3rem;
+  }
+
+  .card__section1 {
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+
+  .card__section3 {
+    border-radius: 0rem 0rem 1rem 1rem;
+  }
+
+  .icon__car {
+    max-width: 4.5rem;
+  }
+
+  .title {
+    margin-bottom: 1.8rem;
+  }
+
+  .text {
+    margin-bottom: 1.7rem;
+  }
+}
